@@ -1,114 +1,95 @@
 @import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
 :root {
-    font-family: 'DotGothic16', sans-serif;
-    --main-color: #e98787;
-    --accent-color:#A9A9A9;
-    --backgroung-color: #2b77c4;
+    font-family: DotGothic16;
+    --background-color: rgb(124, 245, 229);
+    --accent-color: #e5b337;
+    --main-color: rgb(240, 8, 8);
+    --header-color: #FA8072;
 }
 * {
-    box-sizing: border-box;
+    box-sizing: border-box 
 }
 body {
     background-color: var(--background-color);
     padding: 0;
     margin: auto;
-    font-size: 20px;
-    color: var(--main-color);
+    font-size: 18px;
 }
 header {
     position: fixed;
-    top: 1px;
+    top: 0;
     left: 0;
     right: 0;
     z-index: 2;
     height: 10vh;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin-bottom: 2vh;
-    border-bottom: 1px solid var(--main-color);
-    background-color: var(--background-color);
+    border-bottom: 5px solid var(--main-color);
+    background-color: var(--header-color);
 }
 #header-img {
-    width: 14vw;
+    width: 7vw;
 }
 ul {
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: space-between;
 }
 a {
     text-decoration: none;
-    padding: 10px 10px 10px 10px;
+    padding: 1px 20px;
     color: var(--main-color);
+    text-transform: uppercase;
+    font-weight: bold;
 }
 a:hover {
     background-color: var(--accent-color);
 }
-
 .banner {
     position: absolute;
     z-index: 1;
     top: 10vh;
     left: 0;
     right: 0;
-    background: #C0C0C0;
-    min-height: 90vh;
-    background-size: cover;
-    background-position: center center;
 }
-
 h1 {
-    font-size: 70px;
-    padding: 20vh 5vw 1vh;
-    font-weight: 700;
-    font-style: italic;
+    font-size: 90px;
+    display: flex;
+    justify-content: center;
 }
-
 p {
-    padding-left: 5vw;
+    text-align: center;
+    font-size: 30px;
 }
-
 .video {
     position: absolute;
     z-index: 1;
-    top: 100vh;
+    top: 83vh;
     left: 20vw;
 }
-
 #video {
     width: 60vw;
     height: 60vh;
     border: 0;
+    align-items: center;
 }
-
-h2 {
+h2{
     color: var(--accent-color);
-    font-size: 42px;
 }
-
 form {
     position: absolute;
-    top: 190vh;
+    top: 160vh;
     left: 35vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     width: 30vw;
-    padding: 20px;
+    padding: 50px;
     border: 2px solid var(--accent-color);
     border-radius: 3%;
-}
-
-input {
-    margin: 20px;
-    padding: 10px;
-}
-
-#submit {
-    background-color: var(--accent-color);
-    cursor: pointer;
 }
